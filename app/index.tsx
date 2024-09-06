@@ -21,9 +21,7 @@ const blurhash = "LlKBzOWAx]fk_Nj[Rjj[-;WVRPae";
 
 const HomePage = () => {
   const [modalVisible, setModalVisible] = useState<boolean>(false);
-  console.log("Platform :>> ", Platform);
-  console.log("Dimenstions :>> ", Dimensions.get("screen"));
-  console.log("Dimenstions :>> ", Dimensions.get("window"));
+
   const handleOpenUrl = async () => {
     try {
       const supported = await Linking.canOpenURL(errorUrl);
